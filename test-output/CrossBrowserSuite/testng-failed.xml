@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="FireFox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.test.qa.OyoTest">
+        <methods>
+          <include name="verifyOyoPage"/>
+          <include name="launchBrowser"/>
+          <include name="screenshotCapture"/>
+        </methods>
+      </class> <!-- com.test.qa.OyoTest -->
+    </classes>
+  </test> <!-- FireFox Test(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->
